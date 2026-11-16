@@ -12,29 +12,6 @@ SAMtools is used to create, sort, index, validate, and analyse BAM files.
 - Reads: 22,720,100 reads of 100 bases
 - Reference: one 4,641,652-base chromosome, `NC_000913.3`
 
-## Software and environment
-
-The final experiment was performed in Ubuntu 26.04.1 under WSL2 with eight
-alignment threads and two BAM-sorting threads.
-
-- Bowtie2 2.5.4
-- BWA-MEM2 2.2.1
-- SAMtools 1.22.1
-- Python 3
-- Python 3 and `sudo`
-
-On Windows, WSL can be installed from an Administrator PowerShell window:
-
-```powershell
-wsl --install
-```
-
-The project is available inside WSL at:
-
-```text
-/mnt/c/algorithm_engeniring/bacteria
-```
-
 ## Reproduce the experiment
 
 Run from the repository root:
@@ -88,7 +65,4 @@ with the BWA-MEM2 whole-dataset mean.
 - `scripts/run_mapping.py`: builds indices, runs both aligners, and validates BAM.
 - `scripts/collect_stats.py`: calculates the comparison table.
 - `results/summary.tsv`: machine-readable final results.
-- `report.md`: final English report.
-
-Large FASTQ, FASTA, BAM, index, temporary, and downloaded-tool files are
-excluded by `.gitignore`.
+- `report.md`: final report.
