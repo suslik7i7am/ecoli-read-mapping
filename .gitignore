@@ -1,0 +1,7 @@
+data/*
+tools/
+results/*
+!results/summary.tsv
+*.tmp
+__pycache__/
+.tmp/
